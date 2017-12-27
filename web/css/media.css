@@ -1,0 +1,52 @@
+@media screen and (max-width: 1160px) {
+    div.wrap{
+        width:100%;
+    }
+}
+@media screen and (max-width: 840px) {
+    div.formWrap{
+        box-shadow:none;
+    }
+}
+@media screen and (max-width: 810px) {
+    div.wrap{
+        grid-template-columns: 1fr !important;
+    }
+    div.header{
+        grid-column: span 1;
+        max-width:100%;
+    }
+    img.toplogo{
+        width:100%;
+    }
+}
+@media screen and (max-width: 410px) {
+    div.section-element{
+        padding:0;
+    }
+    div.formWrap{
+        margin:15px auto;
+    }
+}
+@media screen and (max-width: 380px) {
+    div.section-element,
+    div.formWrap{
+        width:100%;
+    }
+    form.form{
+        padding:10px 5px;
+    }
+}
+@media screen and (max-width: 340px) {
+    input[type=text].input-element,
+    input[type=tel].input-element,
+    textarea.message-text,
+    button.submit-btn,
+    input[type=submit].submit-btn,
+    .display-row{
+        width:100%;
+    }
+    form.form{
+        padding:10px 0px;
+    }
+}

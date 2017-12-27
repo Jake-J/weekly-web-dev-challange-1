@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    height:100%;
+}
+
+div.wrap{
+    width:1160px;
+    display:grid;
+    margin:0 auto; 
+    background-image: url(../imgs/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height:100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+div.header{
+    grid-column: span 2;
+}
+h2.formHead{
+    color:#fff;
+    font-size:1.8em;
+    font-weight: 400;
+    text-shadow: 0px 2px 1px #000;
+}
+div.logo{
+    position: relative;
+    text-align: center;
+    opacity:0.40;
+}
+div.logo img{
+    padding-top:30px;
+}
+div.section{
+    grid-row:span 6;
+}
+div.section-element{
+    text-align: center;
+    padding:10px;
+}
+div.formWrap{
+    background-color:#f6f6f6;
+    width:380px;
+    border-radius: 3px;
+    margin:25px auto;
+    -webkit-box-shadow: 0px 0px 5px 20px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 5px 20px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px 20px rgba(0,0,0,0.4); 
+}
+form.form{
+    padding:20px;
+}
+
+
+
+
+/* INPUTs SETTINGS */
+/* text input section  textarea setup*/
+input[type=text].input-element,
+input[type=tel].input-element,
+textarea.message-text{
+    display:block;
+    color:#afafaf;
+    margin-top:8px !important;
+    font-size:1.3em;
+    width:330px;
+    padding:3px 0;
+    padding-left: 65px;
+    border-radius:3px;
+    border:1px solid #c6c6c6;
+    outline:none;
+    background-color:#f6f6f6;
+}
+textarea.message-text{
+    padding:3px 7px;
+}
+input.user{
+    background: url('../imgs/user-glyph2.png') no-repeat scroll 7px 4px;
+}
+input.pass{
+    background: url('../imgs/pass-glyph.png') no-repeat scroll 9px 4px;
+}
+input.mailInput{
+    background: url('../imgs/mail-glyph.png') no-repeat scroll 7px 1px;
+}
+input.location{
+    background: url('../imgs/location-glyph.png') no-repeat scroll 13px 2px;
+}
+input.phone{
+    background: url('../imgs/phone-gylph.png') no-repeat scroll 11px 2px;
+}
+/* text input section */
+/* checkbox section */
+input[type=checkbox].css-checkbox {
+    position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -22px !important;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:30px;
+    height:22px; 
+    display:inline-block;
+    line-height:22px;
+    background-repeat:no-repeat;
+    background-position: 0 -0px;
+    font-size:18px;
+    color:#afafaf;
+    vertical-align:middle;
+    cursor:pointer;
+    margin-left:5px;
+}
+label.css-label {
+background-image:url(../imgs/checkbox2.png);
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+/* checkbox end */
+/* END inputs settings */
+/* buttons setup */
+button.submit-btn,
+input[type=submit].submit-btn{
+    background-image:url(../imgs/btn-bg.png);
+    background-size:100% 100%;
+    width:330px;
+    font-size:1.2em;
+    padding:5px 0;
+    text-shadow: 0px 1px 1px #000;
+    color:#fff;
+    border:none;
+    outline:none;
+    border-radius:2px;
+}
+button.submit-btn:hover,
+input[type=submit].submit-btn:hover{
+    cursor: pointer;
+}
+input[types=submit].submit-btn:disabled,
+.disabled{
+    background-image: url('../imgs/disabled-btn-bg.png') !important;
+}
+button.disabled:hover{
+    cursor: not-allowed;
+}
+.small-btn{
+    display:inline-block;
+    width: 120px !important;
+    position: absolute;
+    right:0;
+    bottom:-5px;
+}
+
+.halfwidth-checkbox-container{
+    display:inline-block;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+}
+.danger{
+    background-image: url('../imgs/cancel-btn-bg.png') !important;
+}
+/* Basic setups */
+.display-row{
+    width:330px;
+    position: relative;
+    padding:10px;
+}
+.checkbox-container{
+    text-align: left;
+    margin:8px 0;
+}
+.hidden{
+    visibility: hidden;
+}
+img.logo-end-img{
+    opacity:.5;
+    height:80%;
+}
