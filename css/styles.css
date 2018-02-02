@@ -75,6 +75,7 @@ textarea.message-text{
     border:1px solid #c6c6c6;
     outline:none;
     background-color:#f6f6f6;
+    margin:0 auto;
 }
 textarea.message-text{
     padding:3px 7px;

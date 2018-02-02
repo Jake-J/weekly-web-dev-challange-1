@@ -9,8 +9,11 @@
     }
 }
 @media screen and (max-width: 810px) {
-    div.wrap{
+    /* div.wrap{
         grid-template-columns: 1fr !important;
+    } */
+    div.wrap{
+        display:block;
     }
     div.header{
         grid-column: span 1;
